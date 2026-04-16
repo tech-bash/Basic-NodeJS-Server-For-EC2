@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 8080;
 app.use(morgan("dev"));
 
 app.get("/", (req, res) => {
-    console.log("App is running...");
+    console.log("App is up and running...");
     res.json({ status: "App is running" });
 });
 
