@@ -13,10 +13,9 @@ app.get("/", (req, res) => {
 });
 
 app.get("/health", (req, res) => {
-    console.log("Health check hit");
+    console.log("Health check hit, for checking the github action");
     res.json({ status: "ok" });
 });
-
 app.get("/hello", (req, res) => {
     console.log("Hello endpoint hit 1");
     console.log(`IP : ${req.headers["x-forwarded-for"] || req.socket.remoteAddress}`);
